@@ -1,0 +1,42 @@
+.tabs-holder {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tabs-holder > p {
+  transition: all 0.25s ease-in-out;
+  margin: 0;
+  padding: 1rem;
+  color: var(--secondary-font-color);
+  font-size: 1.5rem;
+}
+
+.tabs-holder > p:hover {
+  cursor: pointer;
+  color: var(--primary-font-color);
+  text-decoration: underline;
+  background-color: var(--secondary-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.header > img {
+  height: min(15vw,50px);
+  margin: 0.5rem 1rem;
+  filter: invert(85%) sepia(86%) saturate(7215%) hue-rotate(296deg)
+    brightness(107%) contrast(91%);
+}

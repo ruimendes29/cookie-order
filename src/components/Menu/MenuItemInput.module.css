@@ -1,0 +1,49 @@
+.inputs {
+  justify-self: end;
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin: auto 3%;
+}
+
+.inputs > * {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+  text-align: center;
+  padding: 3%;
+  font-size: min(5vw, 1rem);
+  border-radius: 50%;
+}
+
+.inputs > .icon {
+  max-width: 33%;
+}
+
+.inputs > input {
+  border: none;
+  width: 66%;
+  border-radius: 0.4rem;
+}
+
+.inputs > .icon:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-font-color);
+  outline: 0.2rem solid var(--secondary-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

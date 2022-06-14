@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item-holder {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  width: 100%;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-item-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.menu-item-holder > * {
+  margin: 0.5rem 0;
+}
+
+.name {
+  color: var(--secondary-font-color);
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.number-of-items.invalid {
+  background-color: rgb(235, 66, 66);
+}
